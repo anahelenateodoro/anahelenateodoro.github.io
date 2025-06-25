@@ -1,112 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio Ana Helena</title>
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- DEV icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-    <!--CCS do projeto  -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <main id="container">
-      <aside id="bio-container">
-        <h2>Ana Helena</h2>
-        <img id="bio-image" src="img/profile.png" alt="Ana Helena" />
-        <p>
-          Olá, meu nome é Ana Helena e sou
-          <span class="highlight">Dev de Dados JR</span>
-        </p>
-        <p id="welcome-text">Seja bem-vindo!!</p>
-        <ul id="social-container">
-          <li>
-            <a
-              href="https://www.facebook.com/anahelena.teodoro.7/"
-              target="_blank"
-              ><ion-icon name="logo-facebook"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ana-helena-teodoro/"
-              target="_blank"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </li>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1" />
+  <title>Ana Helena – Portfólio</title>
 
-          <li>
-            <a href="https://www.instagram.com/annaftx_/" target="_blank"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></a>
-          </li>
-        </ul>
-        <div id="email-container">
-          <ion-icon name="mail-outline"></ion-icon
-          ><a href="mailto:ahelena9876@gmail.com">anahelena9876@gmail.com</a>
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#hero" class="logo">Ana Helena</a>
+    <nav>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <!-- Título fixo -->
+        <h1 data-aos="fade-down">Hi, my name is</h1>
+        <!-- Aqui o nome será “digitado” -->
+        <h2 id="typed-name"
+            class="hero-name"
+            data-aos="fade-up"
+            data-aos-delay="400">
+        </h2>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 data-aos="fade-right">About me</h2>
+        <p data-aos="fade-left" data-aos-delay="200">
+          Estou cursando Engenharia de Computação e atuo como
+          Engenheira de Dados Jr. Trabalho com Java, Databricks,
+          Python, Golang, SQL, AWS, Google Cloud e Docker.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <!-- Tools & Platforms -->
+        <div id="frameworks" class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="skills-grid"></div>
         </div>
-      </aside>
-      <section id="about-container">
-        <h1 id="name">Ana Helena Teodoro</h1>
-        <p id="title">
-          <span class="highlight">Desenvolvedora Full-Stack</span>
-        </p>
-        <p class="description">
-          Sou uma jovem aprendiz na área de Tecnologia. Atualmente tenho
-          estudado e trabalhado com programação especificamente com
-          <span class="highlight"> Back-End e um pouco de Front.</span>
-        </p>
-        <p class="description">
-          Gosto de estudar e adquirir novos conhecimentos. A cada dia que passa
-          <span class="highlight"> me apaixono mais por Back e dados </span> porque ver
-          aquela magia toda acontecendo
-          <span class="highlight"> faz meus olhos brilharem. </span>
-        </p>
-        <!-- <a href="" id="btn-projects"
-          ><ion-icon name="share-social-outline"></ion-icon
-          ><span>Ver Projetos</span></a
-        > -->
-        <h2 id="skills-section-title">Minhas Skills</h2>
-        <p class="description">Conheça as tecnologias que curto:</p>
-        <div id="skills-container">
-          <div class="skills-box">
-            <p class="skills-title">Back-end</p>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-circleci-plain-wordmark"></i>
-            <i class="devicon-go-original-wordmark colored"></i>
-            <i class="devicon-mysql-plain colored"></i>
-            <i class="devicon-python-plain-wordmark"></i>
-            <i class="devicon-typescript-plain colored"></i>
-            <i class="devicon-amazonwebservices-original colored"></i>
-            <i class="devicon-docker-plain-wordmark colored"></i>
-            <i class="devicon-github-original-wordmark"></i>
-            <i class="devicon-git-plain colored"></i>
-
-
-
-          </div>
+        <!-- Languages -->
+        <div id="languages" class="skill-category">
+          <h3>Languages</h3>
+          <div class="skills-grid"></div>
         </div>
-      </section>
-    </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+        <!-- Tools & Platforms -->
+        <div id="tools" class="skill-category">
+          <h3>Tools & Platforms</h3>
+          <div class="skills-grid"></div>
+        </div>
+        <!-- Core Competencies -->
+       <div id="competencies" class="skill-category">
+        <h3>Core Competencies</h3>
+        <div class="skills-grid"></div>
+      </div>
+     </div>
+    </section>
 
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 data-aos="flip-up">Contato</h2>
+
+    <!-- redes sociais -->
+    <div class="socials" data-aos="fade-up" data-aos-delay="600">
+      <a
+        href="https://www.linkedin.com/in/ana-helena-teodoro/"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg"
+          alt="LinkedIn"
+        />
+      </a>
+      <a
+        href="https://github.com/anahelenateodoro"
+        target="_blank"
+        aria-label="GitHub"
+      >
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"
+          alt="GitHub"
+        />
+      </a>
+      <a
+        href="mailto:ahelena9876@gmail.com"
+        aria-label="Email"
+      >
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/maildotru.svg"
+          alt="Email"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer id="site-footer">
+    <div class="container">
+      <p class="footer-note">
+        Designed &amp; Built with
+        <span class="footer-heart">❤️</span>
+        by <span class="footer-name">Ana Helena</span>
+      </p>
+      <p class="footer-copy">
+        © 2025 Ana Helena. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
